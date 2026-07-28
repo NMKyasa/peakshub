@@ -7,16 +7,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application Name
+    | Application Information
     |--------------------------------------------------------------------------
     |
-    | This value is the name of your application. This value is used when the
-    | framework needs to place the application's name in a notification or
-    | any other location as required by the application or its packages.
+    | These values are used throughout the application's user interface.
+    | Keeping them here centralizes branding and versioning.
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'PeaksHub'),
+
+    'company' => env('APP_COMPANY', 'MRT IT Peaks Limited'),
+
+    'version' => env('APP_VERSION', '1.0.0'),
 
     /*
     |--------------------------------------------------------------------------

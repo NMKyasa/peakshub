@@ -100,18 +100,26 @@
 ==============================================================--}}
 <div class="row">
 
+    {{-- Users --}}
     <div class="col-lg-3 col-6">
 
         <div class="small-box bg-info">
 
             <div class="inner">
 
-                <h3>0</h3>
+                <h3>{{ $statistics['users'] }}</h3>
 
                 <p>Users</p>
 
             </div>
 
+            <a href="#"
+               class="small-box-footer">
+
+                View Users
+
+                <i class="fas fa-arrow-circle-right"></i>
+            </a>
             <div class="icon">
 
                 <i class="fas fa-users"></i>
@@ -122,17 +130,27 @@
 
     </div>
 
+    {{-- Departments --}}
     <div class="col-lg-3 col-6">
 
         <div class="small-box bg-success">
 
             <div class="inner">
 
-                <h3>0</h3>
+                <h3>{{ $statistics['departments'] }}</h3>
 
                 <p>Departments</p>
 
             </div>
+
+            <a href="{{ route('departments.index') }}"
+            class="small-box-footer">
+
+                View Departments
+
+                <i class="fas fa-arrow-circle-right"></i>
+
+            </a>
 
             <div class="icon">
 
@@ -144,17 +162,27 @@
 
     </div>
 
+    {{-- Documents --}}
     <div class="col-lg-3 col-6">
 
         <div class="small-box bg-warning">
 
             <div class="inner">
 
-                <h3>0</h3>
+                <h3>{{ $statistics['documents'] }}</h3>
 
                 <p>Documents</p>
 
             </div>
+
+            <a href="{{ route('documents.index') }}"
+               class="small-box-footer">
+
+                View Documents
+
+                <i class="fas fa-arrow-circle-right"></i>
+
+            </a>
 
             <div class="icon">
 
@@ -166,17 +194,26 @@
 
     </div>
 
+    {{-- Reports --}}
     <div class="col-lg-3 col-6">
 
         <div class="small-box bg-danger">
 
             <div class="inner">
 
-                <h3>0</h3>
+                <h3>{{ $statistics['reports'] }}</h3>
 
                 <p>Reports</p>
 
             </div>
+
+            <a href="#"
+               class="small-box-footer">
+
+                View Reports
+
+                <i class="fas fa-arrow-circle-right"></i>
+            </a>
 
             <div class="icon">
 
@@ -225,7 +262,7 @@
 
                     </a>
 
-                    <a href="#"
+                    <a href="{{ route('documents.create') }}"
                        class="list-group-item list-group-item-action">
 
                         <i class="fas fa-folder-plus mr-2"></i>
@@ -234,7 +271,7 @@
 
                     </a>
 
-                    <a href="#"
+                    <a href="{{ route('departments.create') }}"
                        class="list-group-item list-group-item-action">
 
                         <i class="fas fa-building mr-2"></i>
